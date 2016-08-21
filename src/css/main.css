@@ -138,7 +138,7 @@ header .top ul li {
 }
 
 header .top ul li+li {
-	border-left:1px solid #999;
+	border-left:1px #999 solid;
 	margin-left:-3px;
 }
 
@@ -146,6 +146,26 @@ header .top ul li a{
 	display:inline-block;
 	padding:0 1.5em;
 	color:#fff;
+}
+
+@media only screen and (max-width:50em){
+    header .top ul li a {
+    	padding:0 1rem;
+    }
+}
+
+@media only screen and (min-width:30.0625em) and (max-width:50em){
+	header .top ul li a {
+/*		color:red;
+*/	}
+}
+
+@media only screen and (max-width:30em){
+	header .top .tel,
+	header .top ul li:nth-child(3),
+	header .top ul li:nth-child(4) {
+		display:none;
+	}
 }
 
 header .main {
@@ -182,6 +202,46 @@ header .main ul li a.active {
 	color:#ffb300;
 	background-color:#f8f6f1;
 }
+
+@media only screen and (max-width:50em){
+	header .main .brand {
+		float:none;
+		display:block;
+		padding:0;
+		margin:1.5rem auto 0.5rem;
+		text-align:center;
+	}
+
+	header .main ul {
+		text-align:center;
+	}
+
+	header .main ul li {
+		border:none;
+	}
+
+	header .main ul li a {
+		padding:0 1.5rem;
+	}
+}
+
+@media only screen and (max-width:30em) {
+	
+	header .main ul li {
+		line-height:3rem;
+	}
+
+	header .main ul li:first-child {
+		display:none;
+	}
+
+	header .main ul li a {
+		font-weight:normal;
+		padding:0 0.5rem;
+	}
+}
+
+
 /*网站主要内容*/
 .container {
 	width:100%;
@@ -231,6 +291,45 @@ header .main ul li a.active {
     color:#fff;
 }
 
+@media only screen and (max-width:50em) {
+	.trans_data {
+		padding:1rem 0.5rem;
+	}
+
+	.trans_data span {
+		font-size:1.2rem;
+	}
+
+	.trans_data span.trans_money {
+		font-size:1.6rem;
+		margin:0;
+		padding:0;
+		letter-spacing:inherit;
+		box-shadow:none;
+		background:transparent;
+	}
+
+	.trans_report a {
+		font-size:1.2rem;
+	}
+}
+
+@media only screen and (max-width:30em) {
+
+	.transaction {
+		padding:0.5rem 0;
+	}
+
+	.trans_data,.trans_report {
+		float:none;
+		text-align:center;
+	}
+
+	.trans_data .trans_report a {
+		padding:0;
+	}
+}
+
 /*滚动广告*/
 .ad {
 	display:none;
@@ -277,6 +376,40 @@ header .main ul li a.active {
 	color:#999;
 }
 
+@media only screen and (min-width:30.0625em) and (max-width:50em){
+
+	.feature .item h3,
+	.feature .item p {
+		display:block;
+		width:100%;
+		font-size:2.6rem;
+		text-align:center;
+	}
+
+	.feature .item p {
+		font-size:1.2rem;
+	}
+}
+
+@media only screen and (max-width:30em) {
+    
+    .feature {
+    	width:96%;
+    	margin:1rem auto;
+    }
+    
+    .feature .item {
+    	display:block;
+    	width:auto;
+    }
+
+    .feature .item + .item {
+    	margin:1rem 0 0;
+    }
+
+}
+
+
 /*最新公告*/
 
 .notice {
@@ -319,6 +452,22 @@ header .main ul li a.active {
 	color:#ff9900;
 }
 
+@media only screen and (max-width:30em) {
+
+	.notice {
+		width:96%;
+		margin:1rem auto;
+		font-size:1.2rem;
+	}
+
+	.notice a {
+		margin-left:1rem;
+	}
+
+	.notice a span {
+		display:none;
+	}
+}
 /*产品列表*/
 
 .product {
