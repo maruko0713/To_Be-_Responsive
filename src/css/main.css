@@ -598,6 +598,87 @@ header .main ul li a.active {
 	cursor:not-allowed;
 }
 
+@media only screen and (max-width:50em) {
+	
+	.product h2 {
+		float:none;
+		width:100%;
+		margin-top:2rem;
+		font-size:2.2rem;
+	}
+
+	.product h2 em:first-child {
+		margin-top:0;
+	}
+
+	.pruduct h2 em {
+		display:inline;
+		font-size:1.2rem;
+	}
+
+	.product .product_content {
+		float:none;
+		width:100%;
+	}
+
+	.product .product_content .item h3 {
+		margin-bottom:0;
+	}
+
+	.product .product_content .item h3 em {
+		font-size:2.4rem;
+	}
+    
+    .product .product_content .item .info {
+    	padding:1rem 1rem 0;
+    	font-size:1.2rem;
+    }
+
+    .product .product_content .item .info p {
+    	font-size:2rem;
+    }
+
+    .product .product_content .item .buy a {
+    	margin:0.5rem auto;
+    }
+}
+
+@media only screen and (max-width:30em) {
+	.product h2 em:first-child:before {
+		content:"";
+		display:table;
+	}
+	
+	.product .product_content .item h3 em {
+		font-size:2rem;
+		margin-right:0;
+	}
+
+	.product .product_content .item .info {
+		float:right;
+		width:70%;
+		padding:1rem 0;
+		border:none;
+	}
+
+	.product .product_content .item .info p {
+		font-size:1.8rem;
+	}
+
+	.product .product_content .item .buy {
+		clear:both;
+		float:none;
+		width:100%;
+		padding:1rem 0 2rem;
+	}
+
+	.product .product_content .item .buy a {
+		margin-top:0;
+		max-width:26rem;
+	}
+}
+
+
 /*内容底部*/
 
 .footer {
@@ -635,6 +716,39 @@ header .main ul li a.active {
 .footer_content ul li.title {
 	font-size:1.6rem;
 	line-height:3rem;
+}
+
+@media only screen and (max-width:50em) {
+
+	.footer_content .brand {
+		display:none;
+	}
+
+	.footer_content ul {
+		width:20%;
+	}
+
+	.footer_content ul li {
+		font-size:1.2rem;
+		line-height:2rem;
+	}
+
+	.footer_content ul li .title {
+		font-size:1.4rem;
+		line-height:2.5rem;
+	}
+}
+
+@media only screen and (max-width:30em) {
+
+	.footer_content {
+		width:98%;
+	}
+
+	.footer_content ul li .title {
+		font-size:1.2rem;
+		line-height:2rem;
+	}
 }
 /*网站底部导航*/
 footer {
@@ -711,4 +825,64 @@ footer ul li .icon_gs {
 footer p {
 	text-align:center;
 	color:#999;
+}
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background:transparent !important;
+		color: #000 !important;
+		box-shadow:none !important;
+		text-shadow:none !importants;
+	}
+
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+
+	a[href]:after {
+		content:"("attr(href)")";
+	}
+
+	abbr[title]:after {
+		content:"("attr(title)")";
+	}
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content:"";
+	}
+
+	pre,
+	blockquote {
+		border:1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display:table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside:avoid;
+	}
+
+    img {
+    	max-width:100% !important;
+    }
+
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
 }
