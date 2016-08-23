@@ -1,5 +1,4 @@
-/*页面样式*/
-
+/*版权声明 */
 /*==========
   基本默认值*
   ========== */
@@ -332,7 +331,11 @@ header .main ul li a.active {
 
 /*滚动广告*/
 .ad {
-	display:none;
+	/*display:none;*/
+}
+
+.ad img {
+	width:100%;
 }
 
 /*平台特点*/
@@ -346,7 +349,7 @@ header .main ul li a.active {
 
 .feature .item {
 	display:inline-block;
-	width:calc(33.333333333333333% - 3rem);
+	width:calc(33.33333% - 3rem);
 	padding:1rem;
 	font-size:1.4rem;
 	background-color:#fff;
@@ -834,7 +837,7 @@ footer p {
 		background:transparent !important;
 		color: #000 !important;
 		box-shadow:none !important;
-		text-shadow:none !importants;
+		text-shadow:none !important;
 	}
 
 	a,
