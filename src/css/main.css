@@ -260,7 +260,6 @@ header .main ul li a.active {
 .trans_data {
 	float:left;
 	padding:1rem;
-	text-align:left;
 }
 
 .trans_data span {
@@ -286,7 +285,7 @@ header .main ul li a.active {
 .trans_report a {
     display:inline-block;
     padding:1rem;
-    line-height:3em;
+    line-height:3rem;
     color:#fff;
 }
 
@@ -647,6 +646,9 @@ header .main ul li a.active {
 }
 
 @media only screen and (max-width:30em) {
+	.product {
+		width:96%;
+	}
 	.product h2 em:first-child:before {
 		content:"";
 		display:table;
@@ -748,7 +750,7 @@ header .main ul li a.active {
 		width:98%;
 	}
 
-	.footer_content ul li .title {
+	.footer_content ul li.title {
 		font-size:1.2rem;
 		line-height:2rem;
 	}
@@ -779,7 +781,7 @@ footer ul li .icon {
     overflow:hidden;
 }
 
-footer ul li .icon_zfywxk {
+footer ul li .icon_zfywxkz {
 	width:38px;
 	height:27px;
 	background-position:-369px -45px;
